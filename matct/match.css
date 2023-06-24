@@ -8,7 +8,7 @@
 body {
   font-family: "Fira Sans", sans-serif;
 
-  /* font-family: "Satisfy", cursive;  */
+  /* font-family: "Satisfy", cursive; */
 }
 
 main {
@@ -27,7 +27,7 @@ p {
 h2 {
   font-family: "Montserrat", sans-serif;
   padding: 15px 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 span {
@@ -87,13 +87,35 @@ span {
 
 /***** banner Style end  *******/
 
-/***** blog Style start  *******/
+/***** Match Style start  *******/
 
-.blog-section {
+.match-section {
   display: grid;
   gap: 20px;
+  row-gap: 40px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+
+.match-container {
+  width: 300px;
+  height: 220px;
+  border-radius: 12px;
+  border: 5px solid rgb(211, 211, 245);
+}
+
+.flag-image img {
+  max-width: 100%;
+  margin: 10px;
+}
+
+.vs {
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+  margin: 10px;
+  font-size: 1.5rem;
+  color: #2694ac;
 }
 
 .side-container {
@@ -104,7 +126,7 @@ span {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background-image: linear-gradient(90deg, #d4de9f, #c52e988b);
+  background-image: linear-gradient(90deg, #edf6c2, #d056ab8b);
 }
 
 .side-btn1 {
@@ -127,31 +149,7 @@ span {
   text-align: center;
 }
 
-.blog-container {
-  width: 280px;
-  height: 380px;
-  border-radius: 12px;
-  border: 2px solid gray;
-}
-
-.blog-image img {
-  max-width: 100%;
-  border-radius: 6px;
-}
-
-.blog-desc {
-  margin-left: 20px;
-}
-
-.transfer-btn {
-  padding: 3px 10px;
-  font-size: 22px;
-  border-radius: 5px;
-  margin-top: 15px;
-  background-color: ghostwhite;
-}
-
-/***** banner Style end  *******/
+/***** match Style end  *******/
 
 .hidden-button {
   font-family: "Satisfy", cursive;
@@ -215,10 +213,9 @@ footer > h1 {
 
 /***** footer Style end  *******/
 
-/************ media Start*********/
+/******* Media queries Start***/
 
-/******* For mobile *******/
-
+/**** For mobile ***/
 @media (max-width: 576px) {
   .banner-section {
     padding: 15px;
@@ -246,20 +243,13 @@ footer > h1 {
     height: 100%;
   }
 
-  /* ******** bolog ****** */
-  .blog-section {
+  /* ******** match  ****** */
+  .match-section {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-  .blog-button {
-    background-color: white;
-  }
 
-  .blog-container {
-    width: 310px;
-  }
-
-  /* *************footer for mobile *********/
+  /****footer for mobile ******/
 
   .footer-items {
     flex-direction: column;
@@ -293,9 +283,9 @@ footer > h1 {
     max-height: 60vh;
   }
 
-  /************ blog **************/
+  /********* match *********/
 
-  .blog-section {
+  .match-section {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
@@ -303,7 +293,7 @@ footer > h1 {
     background-color: white;
   }
 
-  .blog-container {
+  .match-container {
     width: 310px;
   }
 
