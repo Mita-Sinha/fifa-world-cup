@@ -3,3 +3,349 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* common styles */
+body {
+  font-family: "Fira Sans", sans-serif;
+  /* font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive; */
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  padding: 20px 0;
+}
+
+h2 {
+  padding: 15px 0;
+  font-size: 1.5rem;
+}
+
+span {
+  display: inline-block;
+  margin-right: 30px;
+  color: #6f7071;
+  font-size: 22px;
+}
+
+/* banner Style start  */
+
+.banner-section {
+  padding: 40px 0px;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  background-color: #183153;
+  color: white;
+  border-radius: 10px;
+}
+
+.banner-container:hover {
+  background-image: linear-gradient(45deg, #b8c672, #15a77e);
+}
+
+.banner-container > div {
+  width: 50%;
+}
+
+.banner-hadding {
+  padding: 0 50px;
+}
+
+.banner-image {
+  padding: 0 50px;
+}
+
+.banner-image img {
+  width: 500px;
+  height: 550px;
+}
+.banner-button {
+  font-size: 1.2rem;
+  background-color: red;
+  border: 1px solid red;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.banner-button:hover {
+  color: palegreen;
+}
+
+/***** banner Style end  *******/
+
+/***** blog Style start  *******/
+
+.blog-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.side-container {
+  grid-row: 1/-13;
+}
+
+.side-button {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, #d4de9f, #c52e988b);
+}
+
+.side-btn1 {
+  padding: 20px 15px;
+  font-size: 1.2rem;
+  background-color: white;
+  margin: 15px;
+  border-radius: 20px;
+}
+.side-btn1:hover {
+  color: red;
+}
+#side-btn-color {
+  background-color: rgb(195, 162, 132);
+}
+
+.side-button a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.blog-container {
+  width: 280px;
+  height: 380px;
+  border-radius: 12px;
+  border: 2px solid gray;
+}
+
+.blog-image img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.blog-desc {
+  margin-left: 20px;
+}
+
+.transfer-btn {
+  padding: 3px 10px;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: ghostwhite;
+}
+
+/***** banner Style end  *******/
+
+.hidden-button {
+  position: relative;
+  left: 50%;
+  font-size: 1.8rem;
+  background-color: #e47812;
+  border: 1px solid rgb(209, 206, 226);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin: 20px;
+  visibility: hidden;
+}
+
+/***** footer Style start  *******/
+
+footer {
+  background-color: #183153;
+}
+footer > h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0;
+  color: white;
+}
+.footer-hr1 {
+  width: 80%;
+  margin: 0 auto;
+  background-color: ghostwhite;
+  height: 1px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-items a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 50px 0;
+}
+
+.social-icon {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.social-icon > h2 {
+  font-size: 1.5rem;
+  color: rgb(235, 211, 59);
+  margin: 20px;
+}
+
+.social-icon i {
+  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+/***** footer Style end  *******/
+
+/************ media Start*********/
+
+/******* For mobile *******/
+
+@media (max-width: 576px) {
+  .banner-section {
+    padding: 15px;
+  }
+
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-container > div {
+    width: 100%;
+  }
+
+  .banner-hadding {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .banner-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ******** bolog ****** */
+  .blog-section {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .blog-button {
+    background-color: white;
+  }
+
+  .blog-container {
+    width: 310px;
+  }
+
+  /* *************footer for mobile *********/
+
+  .footer-items {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-items a {
+    padding: 20px 0;
+    color: whitesmoke;
+  }
+}
+
+/******* For Teblet *******/
+@media (min-width: 576px) and (max-width: 768px) {
+  .banner-section {
+    padding: 15px;
+  }
+
+  .banner-hadding {
+    padding: 40px;
+  }
+
+  .banner-image {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-image img {
+    max-width: 100%;
+    max-height: 60vh;
+  }
+
+  /************ blog **************/
+
+  .blog-section {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .blog-button {
+    background-color: white;
+  }
+
+  .blog-container {
+    width: 310px;
+  }
+
+  .side-container {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100%;
+  }
+
+  .side-button {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0;
+    margin: 20px;
+  }
+  .side-btn1 {
+    padding: 20px 25px;
+    font-size: 1.3rem;
+  }
+
+  #side-btn-color1 {
+    background-color: red;
+  }
+
+  #side-btn-color1:hover {
+    color: whitesmoke;
+  }
+  #side-btn-color {
+    background-color: #fff;
+  }
+
+  .hidden-button {
+    visibility: visible;
+  }
+
+  /* *************footer *********/
+
+  .footer-items {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-items a {
+    padding: 20px 0;
+    color: whitesmoke;
+  }
+}
