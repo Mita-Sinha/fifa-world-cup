@@ -117,8 +117,10 @@ span {
 .side-btn1:hover {
   color: red;
 }
-#side-btn-color {
-  background-color: rgb(195, 162, 132);
+
+#side-btn-color1 {
+  background-color: red;
+  color: whitesmoke;
 }
 
 .side-button a {
