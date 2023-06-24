@@ -259,6 +259,11 @@ footer > h1 {
     width: 310px;
   }
 
+  #side-btn-color1 {
+    background-color: red;
+    color: whitesmoke;
+  }
+
   /* *************footer for mobile *********/
 
   .footer-items {

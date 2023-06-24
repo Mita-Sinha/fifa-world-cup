@@ -249,6 +249,10 @@ footer > h1 {
     justify-items: center;
   }
 
+  #side-btn-color1 {
+    background-color: red;
+    color: whitesmoke;
+  }
   /****footer for mobile ******/
 
   .footer-items {
